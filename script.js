@@ -147,20 +147,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// ===== Hide/Show Navbar on Scroll =====
-let lastScroll = 0;
-const navbar = document.querySelector('.navbar');
+document.addEventListener('DOMContentLoaded', () => {
+    let lastScroll = 0;
+    const navbar = document.querySelector('.navbar');
 
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
 
-    if (currentScroll > lastScroll && currentScroll > 100) {
-        // Scrolling down
-        navbar.style.top = '-100px'; // hide navbar
-    } else {
-        // Scrolling up
-        navbar.style.top = '0'; // show navbar
-    }
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            navbar.style.top = '-80px';
+        } else {
+            navbar.style.top = '0';
+        }
 
-    lastScroll = currentScroll;
+        lastScroll = currentScroll;
+    });
 });
+
