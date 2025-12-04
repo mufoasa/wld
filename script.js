@@ -146,3 +146,21 @@ document.addEventListener('DOMContentLoaded', () => {
         renderFeatured();
     }
 });
+
+// ===== Hide/Show Navbar on Scroll =====
+let lastScroll = 0;
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll && currentScroll > 100) {
+        // Scrolling down
+        navbar.style.top = '-100px'; // hide navbar
+    } else {
+        // Scrolling up
+        navbar.style.top = '0'; // show navbar
+    }
+
+    lastScroll = currentScroll;
+});
