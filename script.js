@@ -146,21 +146,3 @@ document.addEventListener('DOMContentLoaded', () => {
         renderFeatured();
     }
 });
-
-document.addEventListener('DOMContentLoaded', () => {
-    let lastScroll = 0;
-    const navbar = document.querySelector('.navbar');
-
-    window.addEventListener('scroll', () => {
-        const currentScroll = window.pageYOffset;
-
-        if (currentScroll > lastScroll && currentScroll > 100) {
-            navbar.style.top = '-80px';
-        } else {
-            navbar.style.top = '0';
-        }
-
-        lastScroll = currentScroll;
-    });
-});
-
