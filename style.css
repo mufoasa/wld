@@ -36,13 +36,16 @@ body {
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background: rgba(15, 15, 15, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
     padding: 1rem 0;
+    transition: top 0.3s ease-in-out; /* smooth hide/show */
 }
+
 
 .nav-container {
     max-width: 1200px;
@@ -681,4 +684,5 @@ body {
         gap: 1rem;
     }
 }
+
 
