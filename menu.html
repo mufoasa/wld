@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - The Garrison Bar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">The Garrison Bar</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="sq">SQ</button>
+                <button class="lang-btn" data-lang="mk">MK</button>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="menu-container">
+            <h1 data-i18n="ourMenu">Our Menu</h1>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-i18n="allItems">All Items</button>
+                <button class="filter-btn" data-filter="hot-drinks" data-i18n="hotDrinks">Hot Drinks</button>
+                <button class="filter-btn" data-filter="cold-drinks" data-i18n="coldDrinks">Cold Drinks</button>
+                <button class="filter-btn" data-filter="natural-juice" data-i18n="naturalJuice">Natural Juice</button>
+                <button class="filter-btn" data-filter="beers-wines" data-i18n="beersWines">Beers & Wines</button>
+                <button class="filter-btn" data-filter="cocktails" data-i18n="cocktails">Cocktails</button>
+                <button class="filter-btn" data-filter="mocktails" data-i18n="mocktails">Mocktails</button>
+                <button class="filter-btn" data-filter="alcoholic" data-i18n="alcoholicDrinks">Alcoholic</button>
+                <button class="filter-btn" data-filter="food" data-i18n="food">Food</button>
+                <button class="filter-btn" data-filter="snacks" data-i18n="snacks">Snacks</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid"></div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="detailModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body" id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>The Garrison Bar</h3>
+                <p data-i18n="footerDesc">Crafting memories, one drink at a time.</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="followUs">Follow Us</h3>
+<div class="social-links">
+    <a href="https://www.facebook.com/thegarrisonbar.mk" target="_blank">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/thegarrisonbar.mk" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@thegarrisonbar.mk" target="_blank">
+        <i class="fab fa-tiktok"></i>
+    </a>
+</div>
+
+
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="contact">Contact</h3>
+                <p>📍 Dervish Cara, Tetovë</p>
+                <p>📞 +389 76 633 625</p>
+                <p>📧 thegarrisonbarmk@gmail.com</p>
+            </div>
+        </div>
+    <div class="footer-bottom">
+    <p>
+        &copy; 2025 
+        <span style="color: #E6B800; font-weight: bold; text-decoration: none;">
+            The Garrison Bar
+        </span>. 
+        <span data-al="Të gjitha të drejtat e rezervuara." 
+              data-en="All rights reserved." 
+              data-mk="Сите права задржани.">
+            All rights reserved.
+        </span>
+        <br>
+        Powered by 
+        <a href="https://instagram.com/whiteluckdigital" target="_blank" 
+           style="color: #E6B800; font-weight: bold; text-decoration: none;">
+            WhiteLuckDigital
+        </a>
+    </p>
+</div>
+
+    </footer>
+
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
